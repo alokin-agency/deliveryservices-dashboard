@@ -3,7 +3,7 @@ import { Outlet } from 'react-router'
 
 const MainLayout = () => {
   return (
-    <div className="dashboard">
+    <div className="dashboard bg-black px-2.5 mx-auto max-w-7xl">
         <Outlet />
     </div>
   )
