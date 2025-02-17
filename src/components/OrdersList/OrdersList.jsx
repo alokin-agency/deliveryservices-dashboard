@@ -4,7 +4,7 @@ import SearchIcon from '../../assets/images/icons/search-input-icon.svg'
 
 const OrdersList = () => {
   return (
-    <div className="orders-list">
+    <div className="orders-list mt-4">
       <h2 className="text-xl text-[#F0F1F1] font-medium">Porudžbine <span className="delivery-count text-[#6C727E]" id="deliveryCount">(3)</span></h2>
       <div className="search flex items-center gap-1 px-1.5 py-0.75 mt-4 rounded-xl bg-[#333740] border border-[#494D59]">
         <div className="icon">
