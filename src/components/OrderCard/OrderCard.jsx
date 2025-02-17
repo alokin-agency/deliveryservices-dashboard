@@ -1,4 +1,7 @@
 import React from 'react'
+import iconCancelled from '../../assets/images/icons/delivery-cancelled-icon.svg'
+import iconCompleted from '../../assets/images/icons/delivery-completed-icon.svg'
+import iconInProgress from '../../assets/images/icons/delivery-in-progress-icon.svg'
 
 const OrderCard = () => {
   return (
@@ -12,8 +15,10 @@ const OrderCard = () => {
               </div>
               <p className="package-info mt-2 text-[#6c727e] text-sm">Paket #312 | Dostava u toku</p>
             </div>
-            <div className="card-status flex flex-col justify-between">
-              <div className="status">Ongoing</div>
+            <div className="card-status flex flex-col justify-between items-end">
+              <div className="status">
+                <img src={iconInProgress} alt="In progress icon" />
+              </div>
               <p className="eta text-[#6c727e] text-sm">ETA: 23:52</p>
             </div>
           </div>
