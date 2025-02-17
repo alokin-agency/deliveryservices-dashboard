@@ -6,7 +6,7 @@ import iconInProgress from '../../assets/images/icons/delivery-in-progress-icon.
 const OrderCard = () => {
   return (
     <a href="#">
-      <div className="card order-card w-full border-b border-[#494D59] pb-2.5 mt-2.5">
+      <div className="card order-card w-full border-b border-[#494D59] pb-2.5 mb-2.5">
           <div className="card-content flex justify-between">
             <div className="card-info flex flex-col justify-between text-[#F0F1F1]">
               <div>
