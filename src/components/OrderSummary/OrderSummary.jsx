@@ -8,8 +8,8 @@ import RightArrow from '../../assets/images/icons/right-arrow.svg'
 
 const OrderSummary = () => {
   return (
-    <div className="order-summary w-full">
-        <div className="map w-full h-30 mt-2.5 rounded-2xl relative overflow-hidden">
+    <div className="order-summary w-full py-2.5">
+        <div className="map w-full h-30 rounded-2xl relative overflow-hidden">
           <img className="relative z-[-1] w-full h-full object-cover object-center" src={MapImage} alt="Map image" />
           <div className="overlay w-full h-[54px] absolute bottom-0 left-0 z-1"></div>
         </div>
