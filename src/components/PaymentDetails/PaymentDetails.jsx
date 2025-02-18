@@ -3,7 +3,7 @@ import CashIcon from '../../assets/images/icons/cash.svg'
 
 const PaymentDetails = () => {
   return (
-    <div className="payment-details w-full py-5">
+    <div className="payment-details w-full py-5 pb-30">
         <h2 className="text-xl text-[#F0F1F1] font-medium">Detalji plaćanja</h2>
         <div className="payment-method my-3.5 flex items-center gap-2.5 px-2.5">
             <img src={CashIcon} alt="Cash icon" />
