@@ -4,7 +4,7 @@ import OrderSummary from "../components/OrderSummary/OrderSummary"
 import OrderDetails from "../components/OrderDetails/OrderDetails"
 import PaymentDetails from "../components/PaymentDetails/PaymentDetails"
 import DeliveryIcon from '../assets/images/icons/delivery-truck.svg'
-import SlidingPane from '../components/SlidingPane/SlidingPane'
+import BottomPane from '../components/BottomPane/BottomPane'
 import ProductListItem from '../components/ProductListItem/ProductListItem'
 import Avatar from '../assets/images/avatar-example.jpeg'
 
@@ -58,7 +58,7 @@ const SingleOrder = () => {
         </button>
         <button onClick={openFinishDelivery} className="w-[55%] py-2.5 px-6 bg-[#D6831C] rounded-[6px] text-[#F0F1F1] text-center">Završi dostavu</button>
       </div>
-      <SlidingPane
+      <BottomPane
       isOpen={isPaneOpen}
       onClose={() => setIsPaneOpen(false)}
       content={paneContent}

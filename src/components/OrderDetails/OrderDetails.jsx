@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import DeliveryBag from '../../assets/images/icons/delivery-bag.svg'
 import RightArrow from '../../assets/images/icons/right-arrow-gray.svg'
 import MessageBox from '../../assets/images/icons/message-box.svg'
-import SlidingPane from '../SlidingPane/SlidingPane'
+import BottomPane from '../BottomPane/BottomPane'
 import ProductListItem from '../ProductListItem/ProductListItem'
 
 const OrderDetails = () => {
@@ -48,7 +48,7 @@ const OrderDetails = () => {
                 </div>
             </div>
         </div>
-        <SlidingPane
+        <BottomPane
         isOpen={isPaneOpen}
         onClose={() => setIsPaneOpen(false)}
         content={paneContent}

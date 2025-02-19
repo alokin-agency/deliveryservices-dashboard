@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import CloseIcon from '../../assets/images/icons/close-icon.svg'
 
-const SlidingPane = ({ isOpen, onClose, content }) => {
+const BottomPane = ({ isOpen, onClose, content }) => {
   return (
     <>
         {/* Pane Overlay */}
@@ -26,4 +26,4 @@ const SlidingPane = ({ isOpen, onClose, content }) => {
   ) 
 }
 
-export default SlidingPane
+export default BottomPane
