@@ -14,9 +14,35 @@ const Header = () => {
     const [paneContent, setPaneContent] = useState(null);
     const [isPaneOpen, setIsPaneOpen] = useState(false);
 
+    const [isActive, setIsActive] = useState(false);
+    const handleToggle = () => {
+        setIsActive((prevState) => !prevState);
+    };
+
     const OpenMenu = () => {
         setPaneContent(
             <div>
+                <div className="active-status flex flex-col items-center mb-10 pb-10 border-b border-[#6C727E]">
+                    <div className="flex w-full items-center gap-2.5 mt-5 mb-2.5">
+                        <div className="w-full h-0.25 bg-[#6C727E]"></div>
+                        <p className="text-[#6C727E] font-medium shrink-0">Vaš status</p>
+                        <div className="w-full h-0.25 bg-[#6C727E]"></div>
+                    </div>
+                    <p className="text-center font-medium">
+                        {isActive ? 'Aktivan' : 'Neaktivan'}
+                    </p>
+                    <label className="relative inline-flex cursor-pointer items-center mt-2.5">
+                        <input 
+                        id="switch" 
+                        type="checkbox" 
+                        className="peer sr-only"
+                        checked={isActive}
+                        onChange={handleToggle}
+                         />
+                        <label for="switch" className="hidden"></label>
+                        <div className="peer h-7 w-13 rounded-full border bg-[#6C727E] after:absolute after:left-[2px] after:top-0.5 after:h-6 after:w-6 after:rounded-full after:border after:border-gray after:bg-white after:transition-all after:content-[''] peer-checked:bg-[#58A65C] peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:green"></div>
+                    </label>
+                </div>
                 <IconButton
                 title='Moje porudžbine'
                 icon={StoreIcon}
