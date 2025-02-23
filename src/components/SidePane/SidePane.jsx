@@ -2,7 +2,6 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 import IconButton from '../IconButton'
-import CloseIcon from '../../assets/images/icons/close-icon.svg'
 import StoreIcon from '../../assets/images/icons/store-icon.svg'
 import SettingsIcon from '../../assets/images/icons/settings-icon.svg'
 import LogoutIcon from '../../assets/images/icons/logout-icon.svg'

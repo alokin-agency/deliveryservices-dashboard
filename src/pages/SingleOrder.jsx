@@ -16,7 +16,7 @@ const SingleOrder = () => {
     setPaneContent(
       <div>
         <h2 className="text-xl">Završi dostavu</h2>
-        <div class="products-list max-h-[150px] overflow-y-auto">
+        <div className="products-list max-h-[150px] overflow-y-auto">
           <ProductListItem />
           <ProductListItem />
           <ProductListItem />
