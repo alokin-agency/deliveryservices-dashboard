@@ -43,7 +43,6 @@ const Header = () => {
             <SidePane
                 isActive={isActive}
                 onToggle={handleToggle}
-                onClose={() => setIsPaneOpen(false)}
             />
         )}
     </>

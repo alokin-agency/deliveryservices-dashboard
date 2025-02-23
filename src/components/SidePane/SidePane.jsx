@@ -7,7 +7,7 @@ import SettingsIcon from '../../assets/images/icons/settings-icon.svg'
 import LogoutIcon from '../../assets/images/icons/logout-icon.svg'
 import ProfileIcon from '../../assets/images/icons/profile-icon.svg'
 
-const SidePane = ({ isActive, onToggle, onClose }) => {
+const SidePane = ({ isActive, onToggle }) => {
   return (
     <motion.div 
     initial={{ x: '-100%' }}
